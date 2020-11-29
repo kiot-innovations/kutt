@@ -28,9 +28,9 @@ const Homepage = () => {
       <Shortener />
       {!isAuthenticated && <NeedToLogin />}
       {isAuthenticated && <LinksTable />}
-      <Features />
-      <Extensions />
-      <Footer />
+      {/* <Features /> */}
+      {/* <Extensions /> */}
+      {/* <Footer /> */}
     </AppWrapper>
   );
 };

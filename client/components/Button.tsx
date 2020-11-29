@@ -26,15 +26,15 @@ export const Button = styled(Flex)<Props>`
     gray: "#444"
   })};
   background: ${switchProp(prop("color", "blue"), {
-    blue: "linear-gradient(to right, #42a5f5, #2979ff)",
+    blue: "linear-gradient(to right, #ffab06, #c50000)",
     red: "linear-gradient(to right, #ee3b3b, #e11c1c)",
-    purple: "linear-gradient(to right, #7e57c2, #6200ea)",
+    purple: "linear-gradient(to right, #eca948, #de7100)",
     gray: "linear-gradient(to right, #e0e0e0, #bdbdbd)"
   })};
   box-shadow: ${switchProp(prop("color", "blue"), {
-    blue: "0 5px 6px rgba(66, 165, 245, 0.5)",
+    blue: "0 5px 6px rgba(66, 66, 66, 0.2)",
     red: "0 5px 6px rgba(168, 45, 45, 0.5)",
-    purple: "0 5px 6px rgba(81, 45, 168, 0.5)",
+    purple: "0 5px 6px rgba(245, 165, 66, 0.3)",
     gray: "0 5px 6px rgba(160, 160, 160, 0.5)"
   })};
   border: none;
