@@ -3,6 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { Flex } from "reflexbox/styled-components";
 
+import { DISALLOW_REGISTRATION } from "../consts";
 import { Button } from "./Button";
 import { fadeIn } from "../helpers/animations";
 import { Col } from "./Layout";
@@ -67,7 +68,7 @@ const NeedToLogin = () => (
       </Title>
       <Link href="/login">
         <a href="/login" title="login / signup">
-          <Button>Login / Signup</Button>
+          <Button> {!DISALLOW_REGISTRATION ? "Log in / Sign up" : "Log in"}</Button>
         </a>
       </Link>
     </Col>

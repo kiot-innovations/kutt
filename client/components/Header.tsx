@@ -110,7 +110,7 @@ const Header: FC = () => {
               if (window.location.pathname !== "/") Router.push("/");
             }}
           >
-            <img src="/images/logo.svg" alt="" />
+            <img src="/images/logo.png" alt=""/>
             {publicRuntimeConfig.SITE_NAME}
           </a>
         </LogoImage>
@@ -124,7 +124,7 @@ const Header: FC = () => {
             m={0}
             p={0}
           >
-            <Li>
+            {/* <Li>
               <ALink
                 href="//github.com/thedevs-network/kutt"
                 target="_blank"
@@ -134,14 +134,14 @@ const Header: FC = () => {
               >
                 GitHub
               </ALink>
-            </Li>
-            <Li>
+            </Li> */}
+            {/* <Li>
               <Link href="/report">
                 <ALink href="/report" title="Report abuse" fontSize={[14, 16]}>
                   Report
                 </ALink>
               </Link>
-            </Li>
+            </Li> */}
           </Flex>
         )}
       </Flex>

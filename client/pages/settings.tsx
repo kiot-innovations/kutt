@@ -27,15 +27,15 @@ const SettingsPage: NextPage = () => {
           .
         </H1>
         <Divider mt={4} mb={48} />
-        <SettingsDomain />
-        <Divider mt={4} mb={48} />
-        <SettingsApi />
-        <Divider mt={4} mb={48} />
+        {/* <SettingsDomain /> */}
+        {/* <Divider mt={4} mb={48} /> */}
+        {/* <SettingsApi /> */}
+        {/* <Divider mt={4} mb={48} /> */}
         <SettingsPassword />
         <Divider mt={4} mb={48} />
-        <SettingsChangeEmail />
-        <Divider mt={4} mb={48} />
-        <SettingsDeleteAccount />
+        {/* <SettingsChangeEmail /> */}
+        {/* <Divider mt={4} mb={48} /> */}
+        {/* <SettingsDeleteAccount /> */}
       </Col>
       <Footer />
     </AppWrapper>

@@ -22,6 +22,7 @@ const port = env.PORT;
 const app = nextApp({ dir: "./client", dev: env.isDev });
 const handle = app.getRequestHandler();
 
+
 app.prepare().then(async () => {
   const server = express();
 
