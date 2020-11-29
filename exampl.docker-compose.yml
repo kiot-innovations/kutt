@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  kutt:
+    image: kutt/kutt
+    depends_on:
+      - postgres
+      - redis
+    command: ["./wait-for-it.sh", "postgres:5432", "--", "npm", "start"]
+    ports:
+      - "3010:3010"
+    env_file:
+      - .env
+    environment:
+      DB_HOST: postgres
+      DB_NAME: kutt
+      DB_USER: someone
+      DB_PASSWORD: someonehere
+      REDIS_HOST: redis
+    networks:
+      - kutt-network
+
+  redis:
+    image: redis:6.0-alpine
+    volumes:
+      - /home/arihant/Documents/Dev/Apps/kutt_redis_data:/data
+    networks:
+      - kutt-network
+
+  postgres:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: someone
+      POSTGRES_PASSWORD: someonehere
+      POSTGRES_DB: kutt
+    ports:
+      - "54323:5432"
+    volumes:
+      - /home/arihant/Documents/Dev/Apps/kutt_postgres_data:/var/lib/postgresql/data
+    networks:
+      - kutt-network
+
+
+networks:
+  kutt-network:
+    driver: "bridge"
