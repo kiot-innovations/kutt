@@ -34,9 +34,9 @@ const Features = () => (
       <FeaturesItem title="API" icon="zap">
         Use the provided API to create, delete, and get URLs from anywhere.
       </FeaturesItem>
-      <FeaturesItem title="Free &amp; open source" icon="heart">
+      {/* <FeaturesItem title="Free &amp; open source" icon="heart">
         Completely open source and free. You can host it on your own server.
-      </FeaturesItem>
+      </FeaturesItem> */}
     </Flex>
   </ColCenterH>
 );
